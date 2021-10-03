@@ -39,10 +39,12 @@ function calculateLossOrProfit(fIntialP,fStockQ,fCurrentP){
     }
     else if(fIntialP === fCurrentP)
     {
+        document.body.style.backgroundColor = "black";
         printOutput.innerText = "No loss no gain !! So, try next again time. 😅😅";
     }
     else
     {
+        document.body.style.backgroundColor = "black";
         var totalProfit = (fCurrentP - fIntialP) * fStockQ;
         var profitPercantage = (totalProfit / fIntialP) * 100;
         printOutput.innerText = "Yay!!! You have an Profit of " + totalProfit + " and Profit Percantage is " + profitPercantage + " %" ;
